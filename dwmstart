@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#if [ -x /usr/bin/xfce4-power-manager ] then
+#  sleep 1
+#  xfce4-power-manager &
+#fi
+nitrogen --restore &
+
+#while true; do
+#	xsetroot -name "$(date +"%a %b %d %I:%M %p")"
+#  sleep 10
+#done 	&
+
+slstatus &
+nm-applet &
+exec dwm
